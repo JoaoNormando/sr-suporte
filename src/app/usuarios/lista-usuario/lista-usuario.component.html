@@ -1,0 +1,38 @@
+
+<div class="row">
+    <div class="col-md-8">
+      <h1 class="page-header">Lista de usuário</h1>
+    </div>
+    <div class="col-md-4">
+      <nav>
+        <a routerLink="/novo-usuario" class="btn btn-primary">Novo usuário</a>
+      </nav>
+    </div>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>email</th>
+      <th>telefone</th>
+      <th>Observação</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of listaUsuario ">
+      <td>{{u.id}}</td>
+      <td>{{u.nome}}</td>
+      <td>{{u.emailAcesso}}</td>
+      <td>{{u.telefone}}</td>
+      <td>{{u.observacao}}</td>
+      <td>
+          <a href="#!" class="fa fa-address-card-o" aria-hidden="true" title="Visualizar"></a>
+          <a href="#!" class="fa fa-pencil-square-o" aria-hidden="true" title="Editar"></a>
+          <a href="#!" class="fa fa-window-close-o" aria-hidden="true" title="Excluir"></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
