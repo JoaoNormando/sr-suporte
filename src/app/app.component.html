@@ -51,10 +51,17 @@
 </header>
 
 <div class="row">
-    <nav class="col-md-2">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, incidunt laborum itaque cupiditate modi iusto nostrum atque repellendus officia ab, dicta omnis voluptates beatae accusamus nobis molestias nam alias a!
+    <nav class="col-md-3">
+        <links>
+            <nav class="menu-lateral">
+                <ul id="link-pagina">
+                    <li><a routerLink="/lista-usuario">Lista usuário</a></li>
+                    <li><a routerLink="/novo-usuario">Cadastro usuário</a></li>
+                </ul>
+            </nav>
+        </links>
     </nav>
-    <div role="main" class="col-md-8">
+    <div role="main" class="col-md-7">
         <section id="conteudo">
             <router-outlet></router-outlet>
         </section>
